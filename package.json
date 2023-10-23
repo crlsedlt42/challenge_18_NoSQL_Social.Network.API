@@ -1,0 +1,19 @@
+{
+  "name": "challenge_18_nosql_social.network.api",
+  "version": "1.0.0",
+  "description": "Carlos E. De La Torre \r ```\r Testing\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
