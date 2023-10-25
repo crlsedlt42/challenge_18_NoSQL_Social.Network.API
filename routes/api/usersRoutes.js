@@ -3,7 +3,7 @@ const router = require('express').Router();
 const {
     
     //Create
-    createSingleUser,
+    createUser,
 
     //Read
     getSingleUser,
@@ -22,9 +22,10 @@ const {
 // Creating an array of routes to match the CRUD operations for Users.js model
 
 
+// These routes are now being directed to the controllers/usersController.js file
 router.route('/')
-    .get(getAllUsers)
-    .post(createSingleUser);
+    .get(getAllUsers) 
+    .post(createUser); // ERROR HERE FROM TERMINAL
 
 router.route('/:userId')
     .get(getSingleUser)
@@ -36,3 +37,11 @@ router.route('/:userId/friends/:friendId')
     .delete(deleteFromList);
 
 module.exports = router;
+
+    // getAllUsers,
+    // getOneUser,
+    // createOneUser,
+    // updateOneUser,
+    // deleteOneUser,
+    // addToFriendList,
+    // removeFromFriendList

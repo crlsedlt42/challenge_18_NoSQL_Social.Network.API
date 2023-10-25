@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 // Import the schema for Reaction used to validate and create a 'reaction' from the subdocument
 // The responses from the Reaction model will be used to populate the reactions field in the Thought model
-const reactionSchema = require('./Reaction');
+const reactionSchema = require('./Reactions');
 
 const thoughtSchema = new Schema(
     {
