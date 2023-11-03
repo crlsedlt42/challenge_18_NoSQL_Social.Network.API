@@ -6,10 +6,7 @@ module.exports = {
         try {
             const users = await Users.find();
 
-            const userObject = {
-                users,
-                headCount: await headCount(),
-            };
+            const userObject = users
 
             res.json(userObject);
         } catch (err) {
@@ -39,7 +36,7 @@ module.exports = {
     async createUser (req, res) {
         try {
             const user = await Users.create(req.body);
-            res.json(user);
+            res.status(200).json(user);
         } catch (err) {
             console.log(err);
             return res.status(500).json(err);
