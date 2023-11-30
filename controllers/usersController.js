@@ -8,7 +8,7 @@ module.exports = {
 
             const userObject = users
 
-            res.json(userObject);
+            res.status(200).json(userObject);
         } catch (err) {
             console.log(err);
             return res.status(500).json(err);
@@ -18,14 +18,13 @@ module.exports = {
     // Get a single user
     async getSingleUser (req, res) {
         try {
-            const user = await Users.findOne({ _id: req.params.userId })
-                .select('-__v');
+            const user = await Users.findOne({ _id: req.params.userId }).select('-__v');
 
             if (!user) {
                 return res.status(404).json({ message: 'No user with that ID' })
             }
 
-            res.json({ user});
+            res.json({user});
         } catch (err) {
             console.log(err);
             return res.status(500).json(err);
