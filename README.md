@@ -28,9 +28,9 @@ npm run start
 
 Provide instructions and examples for use. Include screenshots as needed.
 
-![screenshot]()
+![screenshot](./images/Challenge_18-Social.Network.jpg)
 
-[Video Walkthrough]()
+[Video Walkthrough](https://youtu.be/XZAzIGF6j1o)
 
 ## License
 
